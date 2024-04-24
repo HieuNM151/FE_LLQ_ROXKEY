@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trang-chu</title>
+    <link rel="stylesheet" href="css/trangchu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <header class="header" id="myHeader" style="width: 100%;">
+        <nav class="navbar navbar-expand-lg"
+            style=" padding: 0px 60px; width: 1440px; height: 60px; max-width: 100%; margin: auto;">
+            <div class="container-fluid">
+                <a class="navbar-brand" style="margin-right: 40px;" href="#"><img id="img-logo-h"
+                        src="image/Frame 1000002625.png" alt=""></a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: space-between;">
+                    <ul class="lef-item" id="lef-item">
+                        <li class="nav-item dropdown nav-cha">
+                            <a href="#" role="button" class="lef-nav " id="lef-nav" style="margin-right: 40px;"
+                                aria-expanded="false">
+                                Về chúng tôi <img class="lef-img" src="image/chevron-down.png" style="height: 100%;"
+                                    alt="default Image">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Về chúng tôi</a></li>
+                                <li><a class="dropdown-item" href="#">Thông điệp CEO</a></li>
+                                <li><a class="dropdown-item" href="#">Đơn vị thành viên</a></li>
+                                <li><a class="dropdown-item" href="#">Trách nhiệm xã hội</a></li>
+                                <li><a class="dropdown-item" href="#">Giải thưởng</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown nav-cha">
+                            <a href="#" class="lef-nav" id="lef-nav2" role="button" style="margin-right: 40px;"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dịch vụ <img class="lef-img" src="image/chevron-down.png" style="height: 100%;" alt="">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Quản lý vận hành bất động sản</a></li>
+                                <li><a class="dropdown-item" href="#">Quản trị nhân lực</a></li>
+                                <li><a class="dropdown-item" href="#">Giả pháp công nghệ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown nav-cha">
+                            <a class="lef-nav" id="lef-nav3" href="#" role="button" style="margin-right: 40px;"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tin tức <img class="lef-img" src="image/chevron-down.png" style="height: 100%;" alt="">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Tổng hợp</a></li>
+                                <li><a class="dropdown-item" href="#">TNTech</a></li>
+                                <li><a class="dropdown-item" href="#">TNPM</a></li>
+                                <li><a class="dropdown-item" href="#">TNTalent</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" style="margin-right: 40px;" href="#">Quan hệ cổ
+                                đông</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="margin-right: 48px;" href="#">Tuyển dụng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="margin-right: 48px;" href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+
+                    <ul class="right-item" id="right-item">
+                        <li class="right-nav">
+                            <a class="nav-link" href="#"><img id="search" src="image/search.png" alt=""></a>
+                        </li>
+                        <li class="right-nav">
+                            <a class="nav-link" href="#"><img id="dat" src="image/globe.png" style="margin-right: 8px;"
+                                    alt="">VI</a>
+                        </li>
+                        <li class="right-nav">
+                            <a class="nav-link" href="#"><img id="phone" src="image/phoneheader.png"
+                                    style="margin-right: 8px;" alt="">098728 5533</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-menu active" id="menu-mobile">
+                <div class="mobile-logo">
+                    <a href=""><img src="image/mobielogo.svg" style="height: 24px;" alt=""></a>
+                </div>
+                <div class="mobile-menu-right">
+                    <input type="checkbox" class="checkbox-mobile-menu">
+                    <div class="line-checkbox">
+                    </div>
+                    <div class="mobile-menu-data">
+                        <div class="accordion">
+                            <div class="mobile-menu-item">
+                                <a href="">Trang chủ</a>
+                            </div>
+                            <div class="mobile-menu-item">
+                                <a class="in" data-toggle="collapse" href="#vct-mobile">
+                                    Về chúng tôi <img id="menu-icon" src="image/drop-menu-mobile.svg" alt="" />
+                                </a>
+                                <div id="vct-mobile" class="collapse" data-parent="#accordion">
+                                    <a href="" class="subitem-menu-mobile">Tổng quan</a>
+                                    <a href="" class="subitem-menu-mobile">Thông điệp CEO</a>
+                                    <a href="" class="subitem-menu-mobile">Đơn vị thành viên</a>
+                                    <a href="" class="subitem-menu-mobile">Trách nhiệm xã
+                                        hội</a>
+                                    <a href="" class="subitem-menu-mobile">Giải thưởng</a>
+                                </div>
+                            </div>
+                            <div class="mobile-menu-item">
+                                <a class="in" data-toggle="collapse" href="#dv-mobile">
+                                    Dịch vụ <img src="image/drop-menu-mobile.svg" alt="" />
+                                </a>
+                                <div id="dv-mobile" class="collapse" data-parent="#accordion">
+                                    <a href="" class="subitem-menu-mobile">Quản lý vận hành
+                                        bất động sản</a>
+                                    <a href="" class="subitem-menu-mobile">Công nghệ</a>
+                                    <a href="" class="subitem-menu-mobile">Cho thuê bất động
+                                        sản</a>
+                                    <a href="" class="subitem-menu-mobile">Quản trị
+                                        nguồn nhân lực</a>
+                                </div>
+                            </div>
+                            <div class="mobile-menu-item">
+                                <a class="in" data-toggle="collapse" href="#tt-mobile">
+                                    Tin tức <img src="image/drop-menu-mobile.svg" alt="" />
+                                </a>
+                                <div id="tt-mobile" class="collapse" data-parent="#accordion">
+                                    <a href="news.html" class="subitem-menu-mobile">Tổng hợp</a>
+                                    <a href="" class="subitem-menu-mobile">TNPM</a>
+                                    <a href="" class="subitem-menu-mobile">TNTech</a>
+                                    <a href="" class="subitem-menu-mobile">TNTalent</a>
+                                    <a href="" class="subitem-menu-mobile">TNL</a>
+                                </div>
+                            </div>
+                            <div class="mobile-menu-item">
+                                <a class="mobile-menu-item-link" href="">Quan hệ cổ đông
+                                </a>
+                            </div>
+                            <div class="mobile-menu-item">
+                                <a class="mobile-menu-item-link" href="">Tuyển dụng
+                                </a>
+                            </div>
+                            <div class="mobile-menu-item">
+                                <a class="mobile-menu-item-link" href="">Liên hệ
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bottom-menu-mobile">
+                            <div class="search-mobile">
+                                <img src="image/searchblack.png" alt="">
+                            </div>
+                            <div class="langue-mobile">
+                                <img src="image/globeblack.png" alt="">VI
+                            </div>
+                            <div class="phone-mobile">
+                                <img class="box-phone-mobile" src="image/phoneblack.png" alt="">024 7307 3099
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+
+        <div class="subheader">
+            <ul class="menu-bee" style="max-width: 100vw;">
+
+            </ul>
+        </div>
+
+    </header>
+
+
+    <section class="banner-home">
+        <video muted="" playsinline="" autoplay="" loop="" id="videohome" class="d-block">
+            <source src="https://roxkey.vn/TNSv2_HinhAnh/TrangChu/Screen-Recording-2023-11-23-at-11.06.19.mp4"
+                type="video/mp4">
+        </video>
+        <img src="#" alt="" class="d-none">
+    </section>
+
+    <section class="about-us" style="width: 100%;">
+        <div class="bg-abus">
+            <div class="img-bg-about-us" style="background-image: url('/image/6d23378b2f18ea35a6bea8cdb4cd7154.jpg') ">
+
+            </div>
+            <div class="form-site">
+                <div class="box-about-us show">
+                    <div class="gtc">VỀ CHÚNG TÔI</div>
+                    <h1 class="des-title">Công Ty Cổ Phần ROX Key Holdings</h1>
+                    <p class="descriptions">
+                        ROX Key là nhà cung cấp giải pháp đa ngành cho doanh nghiệp trong lĩnh vực bất động
+                        sản,
+                        dịch vụ, công nghệ; luôn sáng tạo và thấu hiểu nhu cầu khách hàng, với dịch vụ vận
+                        hành
+                        bất động sản trên phạm vi toàn quốc, đội ngũ công nghệ nội bộ sẵn có, dịch vụ tư vấn
+                        &amp; cung ứng nguồn nhân lực đa ngành.
+                    </p>
+                    <a href="#" class="global-btn-view-more">
+                        Xem thêm
+                        <img src="/image/next.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service">
+        <div class="form-site">
+            <div class="row">
+                <div class="col-md-12 col-lg-4 service-text">
+                    <div class="td">DỊCH VỤ CUNG CẤP</div>
+                    <h2 class="td-page show">Dịch vụ chuyên xuất sắc, chuyên nghiệp, tận tâm và luôn lấy khách hàng
+                        làm trung tâm.</h2>
+                    <p class="show3">Chúng tôi tự hào là đơn vị cung cấp dịch vụ chuyên nghiệp, lấy quản lý vận hành
+                        bất động sản làm trung tâm, tạo ra hệ sinh thái toàn diện với giá trị cốt lõi là nguồn nhân
+                        lực
+                    </p>
+                    <a href="#" class="global-btn-view-more">
+                        Xem thêm
+                        <img src="/image/next.png" alt="">
+                    </a>
+                </div>
+
+                <div class="col-md-12 col-lg-8 service-img">
+                    <div class="row">
+                        <div class="col-12 col-md">
+                            <div class="la1 show">
+                                <a href="" class="service-item" style="background-image: url('/image/image23.png')">
+                                </a>
+                                <span class="span">Quản lý vận hành bất động sản</span>
+                            </div>
+                            <div class="la2 show">
+                                <a href="/" class="service-item" style="background-image: url('/image/image20.png')">
+                                </a>
+                                <span class="span">Quản trị nguồn nhân lực</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md">
+                            <div class="la3 show">
+                                <a href="" class="service-item" style="background-image: url('/image/image22.png')">
+                                </a>
+                                <span class="span">Quản lý vận hành bất động sản</span>
+                            </div>
+                            <div class="la4 show">
+                                <a href="/" class="service-item" style="background-image: url('/image/image25.png')">
+                                </a>
+                                <span class="span">Quản trị nguồn nhân lực</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="new">
+        <div class="content-new form-site">
+            <div class="conten-title">
+                <div class="title show">
+                    Tin tức nổi bật
+                </div>
+            </div>
+            <a href="" class="content-hot show">
+                <div class="row">
+                    <div class="col-12 col-sm-6 content-1">
+                        <span class="img-content-hot" style="background-image: url('/image/Image.png');">
+                        </span>
+                    </div>
+                    <div class="col-12 col-sm-6 content-news">
+                        <div class="mck">
+                            <span class="site">ROXKey</span>
+                            <span class="date-news">28/02/2024</span>
+                        </div>
+                        <h2 class="new-title">TNS Holdings chung tay cải tạo điểm trường tại Lạng Sơn</h2>
+                        <p class="new-tiele2">Sau nhiều ngày triển khai, công trình cải tạo điểm trường Làng Lầu
+                            thuộc trường mầm non
+                            xã Nhất Tiến (Bắc Sơn, Lạng Sơn) đã kịp hoàn thành, sẵn sàng chào đón các em học sinh
+                            bước vào năm học mới.</p>
+                        <span href="" class="button-xem-them-dv">Xem thêm <img src="image/VectorRed.png"
+                                class="image-next" alt="">
+                        </span>
+                    </div>
+                </div>
+            </a>
+
+            <div class="list-new-show">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <a href="" class="new-item">
+                            <div class="box-over">
+                                <div class="img-thub-news" style="background-image: url('/image/Image3.png');">
+                                </div>
+                            </div>
+                            <div class="content-item-news">
+                                <h4 class="title-item-news max-3-line">
+                                    Vận hành bằng trải nghiệm, “chạm" cảm xúc cư dân
+                                </h4>
+                                <div class="buttom-new-item">
+                                    <span class="site">TNPM</span>
+                                    <span class="date-news">26/08/2023</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <a href="" class="new-item">
+                            <div class="box-over">
+                                <div class="img-thub-news" style="background-image: url('/image/Image4.png');">
+                                </div>
+                            </div>
+                            <div class="content-item-news">
+                                <h4 class="title-item-news max-3-line">
+                                    TNTech thực hiện 1996 yêu cầu hỗ trợ CNTT cho TNG Holdings Vietnam trong tháng
+                                    8/2023
+                                </h4>
+                                <div class="buttom-new-item">
+                                    <span class="site">TNPM</span>
+                                    <span class="date-news">05/09/2023</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <a href="" class="new-item">
+                            <div class="box-over">
+                                <div class="img-thub-news" style="background-image: url('/image/Image6.png');">
+                                </div>
+                            </div>
+                            <div class="content-item-news">
+                                <h4 class="title-item-news max-3-line">
+                                    Khóa học "Tư duy dịch vụ và giải quyết vấn đề" dành cho CBNV TNTech
+                                </h4>
+                                <div class="buttom-new-item">
+                                    <span class="site">TNPM</span>
+                                    <span class="date-news">01/12/2023</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <a href="" class="new-item">
+                            <div class="box-over">
+                                <div class="img-thub-news" style="background-image: url('/image/Image7.png');">
+                                </div>
+                            </div>
+                            <div class="content-item-news">
+                                <h4 class="title-item-news max-3-line">
+                                    Top 5 đơn vị cho thuê văn phòng hàng đầu Việt Nam
+                                </h4>
+                                <div class="buttom-new-item">
+                                    <span class="site">TNPM</span>
+                                    <span class="date-news">07/08/2023</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box-btn-vm">
+                        <a href="" class="btn-xt-v2">Xem thêm <img src="image/next.png" class="image-next" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-site2">
+        <div id="slider1">
+            <div class="owl-carousel owl-theme">
+                <div class="content-cskh item">
+                    <div class="slide" style="background-image: url('/image/Image11.png');">
+                    </div>
+                    <div class="cskh-content2">
+                        <h4>Lắng nghe chất lượng dịch vụ3</h4>
+                        <p>"Lắng nghe - Thấu hiểu - Cải tiến" là nguyên tắc mà TNS Holdings và các Công ty thành
+                            viên
+                            đang
+                            nâng cao chất lượng dịch vụ mỗi ngày nhằm cung cấp dịch vụ xuất sắc nhất tới khách hàng.
+                        </p>
+                        <a href="#" class="global-btn-view-more">
+                            Xem thêm
+                            <img class="slide-img" src="/image/next.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="content-cskh item">
+                    <div class="slide" style="background-image: url('/image/Image11.png');">
+                    </div>
+                    <div class="cskh-content2">
+                        <h4>Lắng nghe chất lượng dịch vụ1</h4>
+                        <p>"Lắng nghe - Thấu hiểu - Cải tiến" là nguyên tắc mà TNS Holdings và các Công ty thành
+                            viên
+                            đang
+                            nâng cao chất lượng dịch vụ mỗi ngày nhằm cung cấp dịch vụ xuất sắc nhất tới khách hàng.
+                        </p>
+                        <a href="#" class="global-btn-view-more">
+                            Xem thêm
+                            <img class="slide-img" src="/image/next.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="content-cskh item">
+                    <div class="slide" style="background-image: url('/image/Image11.png');">
+                    </div>
+                    <div class="cskh-content2">
+                        <h4>Lắng nghe chất lượng dịch vụ2</h4>
+                        <p>"Lắng nghe - Thấu hiểu - Cải tiến" là nguyên tắc mà TNS Holdings và các Công ty thành
+                            viên
+                            đang
+                            nâng cao chất lượng dịch vụ mỗi ngày nhằm cung cấp dịch vụ xuất sắc nhất tới khách hàng.
+                        </p>
+                        <a href="#" class="global-btn-view-more">
+                            Xem thêm
+                            <img class="slide-img" src="/image/next.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cksh-conten3">
+                <div class="trai img"><img src="image/Vector_trai.png" alt=""></div>
+                <div class="phai img"><img src="image/Layer_phai.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="slide-footer">
+            <div class="form-site1" style="display: flex; align-items: center;">
+                <div class="slider">
+                    <div class="event prev-btn">
+                        <img class="img" src="image/Vector_trai.png" alt="">
+                    </div>
+                    <div class="content-even owl-carousel owl-theme" id="slide-logo">
+                        <div class="item">
+                            <img class="img" src="/image/tv-tnpm.svg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img" src="/image/tv-tntalent.svg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img" src="/image/tv-tntech.svg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img" src="/image/tv-tnpm.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="event next-btn">
+                        <img class="img" src="image/Layer_phai.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="form-site">
+                <div class="footer-content row">
+                    <div class="col-12 col-sm-12 col-md-6">
+                        <div class="information">
+                            <a href=""><img src="image/Frame 1000002624.png" alt="">
+                            </a>
+                            <div class="contact">
+                                <div class="contac-lh">
+                                    <div class="icon-contac"><img src="image/phone.png" alt=""></div>
+                                    <div class="content-lh">024 7307 3099 (Ban Kinh doanh & MKT: 7450) <br>
+                                        Hotline: 098728 5533</div>
+                                </div>
+                                <div class="contac-lh">
+                                    <div class="icon-contac">
+                                        <img src="/image/mail.png" alt="">
+                                    </div>
+                                    <div class="content-lh">marketing@tnsholdings.com.vn</div>
+                                </div>
+                                <div class="contac-lh">
+                                    <div class="icon-contac">
+                                        <img src="/image/map.png" alt="">
+                                    </div>
+                                    <div class="content-lh">
+                                        Tầng 25, TNR Tower, 54A Nguyễn Chí Thanh, P.Láng Thượng, Q.Đống Đa, Hà Nội
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-sd-3 col-xl-2">
+                        <div class="nationnal">
+                            <h5 class="title-national">Công ty</h5>
+                            <a href="" class="conten-nationnal">Trang chủ</a>
+                            <a href="" class="conten-nationnal">Về chúng tôi</a>
+                            <a href="" class="conten-nationnal">Tin tức</a>
+                            <a href="" class="conten-nationnal">Tuyển dụng</a>
+                            <a href="" class="conten-nationnal">Chính sách</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-sd-3 col-xl-2">
+                        <div class="nationnal">
+                            <h5 class="title-national">Dịch vụ</h5>
+                            <a href="" class="conten-nationnal">Quản lý vận hành</a>
+                            <a href="" class="conten-nationnal">Công nghệ</a>
+                            <a href="" class="conten-nationnal">Quản trị nguồn nhân lực</a>
+                            <a href="" class="conten-nationnal">Cho thuê bất động sản</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-sd-3 col-xl-2">
+                        <div class="folow">
+                            <h5 class="title-forlow ">Theo dõi chúng tôi</h5>
+                            <a href="" class="img-folow"><img src="image/Vector.png" alt=""></a>
+                            <a href="" class="img-folow"><img src="image/X.png" alt=""></a>
+                            <a href="" class="img-folow"><img src="/image/LinkedIn.png" alt=""></a>
+                            <a href="" class="img-folow"><img src="image/Youtube.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="slide-cskh.js"></script>
+<script src="slide.js"></script>
+<script src="index.js"></script>
+<script src="header-con.js"></script>
+<script src="menu-mobile.js"></script>
+
+</html>
